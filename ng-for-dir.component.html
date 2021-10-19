@@ -1,0 +1,15 @@
+<div>
+    <h1>Product Details :</h1>
+    <table border="5px">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+        </tr>
+        <tr *ngFor="let prodt of pro">
+            <td>{{prodt.id}}</td>
+            <td>{{prodt.name}}</td>
+            <td>{{prodt.price}}</td>
+        </tr>
+    </table>
+</div>

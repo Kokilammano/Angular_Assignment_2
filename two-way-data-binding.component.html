@@ -1,0 +1,37 @@
+<div style="padding: 100px 450px;">
+<h2>STUDENT REGISTRATION FORM</h2><hr>
+<form>
+    <div>
+        <label>Name :</label>
+        <input type="text" name="name" [(ngModel)]="name">
+    </div><br>
+    <div>
+        <label>EMail :</label>
+        <input type="text" name="email" [(ngModel)]="email">
+    </div><br>
+    <div>
+        <label>Mobile :</label>
+        <input type="number" name="mobile" [(ngModel)]="mobile">
+    </div><br>
+    <div>
+        <label>Course :</label>
+        <input type="text" name="course" [(ngModel)]="course">
+    </div><br>
+    <div>
+       <input type="submit" value="Register" (click)="reg()">&nbsp;&nbsp;
+       <input type="reset" value="Reset" (click)="reset()">
+    </div>
+    
+   
+</form>
+</div>
+<div>
+    <div style="color: green; text-align: center;" *ngIf="loginStatus" >
+        {{msg}}
+    </div>
+    <div style="color: red; text-align: center;" *ngIf="!loginStatus">
+        {{msg}}
+    </div>
+</div>
+ 
+
